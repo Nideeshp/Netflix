@@ -1,0 +1,43 @@
+/* Style for the row */
+.row {
+    margin-left: 20px;
+    color: #fff;
+  }
+  
+  /* Container for the posters */
+  .posters {
+    display: flex;
+    padding: 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  
+  /* Hide the scrollbar */
+  .posters::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Poster styles */
+  .poster {
+    cursor: pointer;
+    max-height: 250px;
+    margin-right: 10px;
+    transition: transform 0.3s, border-radius 0.3s; /* Add transition for border-radius */
+    border-radius: 15px; /* Add a border radius */
+
+  }
+  
+  /* Styles for small posters */
+  .smallPoster {
+    cursor: pointer;
+    max-height: 150px;
+    margin-right: 10px;
+    transition: transform 0.3s; /* Add a smooth transition effect */
+  }
+  
+  /* Transform effect when hovering */
+  .poster:hover,
+  .smallPoster:hover {
+    transform: scale(1.1); /* Increase size by 10% on hover */
+  }
+  
